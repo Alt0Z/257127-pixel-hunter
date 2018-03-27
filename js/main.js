@@ -15,9 +15,6 @@
 
   let currentScreen = 0;
 
-  console.log(GAME_SCREENS.length);
-
-
   let showScreen = function (screenIndex) {
     let screen = GAME_SCREENS[screenIndex].cloneNode(true);
     window.deleteChildren(MAIN_SCREEN);
