@@ -29,7 +29,7 @@
   };
 
 
-  let onScreenChange = function (e) {
+  const onScreenChange = function (e) {
     let screenIndex = GAME_SCREENS.length - 1;
     if (e.altKey && e.keyCode === LEFT_ARROW) {
       if (currentScreen > 0) {
