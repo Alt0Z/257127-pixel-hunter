@@ -1,7 +1,7 @@
 # Личный проект «Пиксель хантер» [![Build status][travis-image]][travis-url]
 
 * Студент: [Roman Shakhanov](https://up.htmlacademy.ru/ecmascript/4/user/257127).
-* Наставник: `Неизвестно`.
+* Наставник: [Dan Onoshko](https://htmlacademy.ru/profile/id154426).
 
 ---
 
