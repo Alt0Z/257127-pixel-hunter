@@ -15,12 +15,19 @@
 
   let currentScreen = 0;
 
-  let showScreen = function (screenIndex) {
+  const showScreen = function (screenIndex) {
     let screen = GAME_SCREENS[screenIndex].cloneNode(true);
-    window.deleteChildren(MAIN_SCREEN);
+    deleteChildren(MAIN_SCREEN);
     MAIN_SCREEN.appendChild(screen);
     currentScreen = screenIndex;
   };
+
+  const deleteChildren = function (el) {
+    while (el.hasChildNodes()) {
+      el.removeChild(el.firstChild);
+    }
+  };
+
 
   let onScreenChange = function (e) {
     let screenIndex = GAME_SCREENS.length - 1;
