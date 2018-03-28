@@ -16,7 +16,7 @@
   let currentScreen = 0;
 
   const showScreen = function (screenIndex) {
-    let screen = GAME_SCREENS[screenIndex].cloneNode(true);
+    const screen = GAME_SCREENS[screenIndex].cloneNode(true);
     deleteChildren(MAIN_SCREEN);
     MAIN_SCREEN.appendChild(screen);
     currentScreen = screenIndex;
