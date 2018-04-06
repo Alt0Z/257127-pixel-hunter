@@ -1,4 +1,5 @@
 import getElementFromTemplate from './template.js';
+import renderScreen from './switcher.js';
 
 const stats = getElementFromTemplate(`<header class="header">
 <div class="header__back">
@@ -118,5 +119,13 @@ const stats = getElementFromTemplate(`<header class="header">
   <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
 </div>
 </footer>`);
+
+const backButton = stats.querySelector(`.back`);
+
+const onButtonBack = function () {
+  renderScreen(1);
+};
+
+backButton.addEventListener(`click`, onButtonBack);
 
 export default stats;
